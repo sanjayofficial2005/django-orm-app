@@ -39,8 +39,10 @@ class Student (models.Model):
 
     class StudentAdmin(admin.ModelAdmin):
     list_display=('referencenumber','name','age','email','mobileno')
+```
 
-admin.py
+### admin.py:
+```python
 
  from django.contrib import admin
 from .models import Student,StudentAdmin
@@ -48,6 +50,7 @@ from .models import Student,StudentAdmin
 # Register your models here.
 admin.site.register(Student,StudentAdmin)
 ```
+
 
 
 
